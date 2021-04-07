@@ -1,0 +1,31 @@
+ion-content {
+    --background: var(--ion-color-hu-green);
+}
+ion-toolbar {
+    --background: var(--ion-color-hu-green);
+}
+ion-col {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.font {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    padding: 8px;
+}
+.img {
+    height: 200px;
+    width: 150px;
+    img {
+        height: 100%;
+        width: 100%;
+    }
+}
+ion-icon {
+    font-size: 2rem;
+}
+.theme-active {
+    border: 2px solid var(--ion-color-hu-brown);
+}

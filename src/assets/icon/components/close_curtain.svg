@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="23.485" height="17.999" viewBox="0 0 23.485 17.999">
+  <g id="Group_4796" data-name="Group 4796" transform="translate(-107.257 -316)">
+    <g id="Group_4793" data-name="Group 4793">
+      <g id="Group_4791" data-name="Group 4791" transform="translate(-11 27.243)">
+        <path  id="Path_4654" data-name="Path 4654" d="M19,9H15V5" transform="translate(127.515 281.029) rotate(45)" stroke="#373737" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+        <line  id="Line_18" data-name="Line 18" y1="6" x2="6" transform="translate(136 293.757) rotate(45)" stroke="#373737" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      </g>
+      <g id="Group_4792" data-name="Group 4792" transform="translate(249 623.243) rotate(180)">
+        <path  id="Path_4654-2" data-name="Path 4654" d="M19,9H15V5" transform="translate(127.515 281.029) rotate(45)" stroke="#373737" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+        <line  id="Line_18-2" data-name="Line 18" y1="6" x2="6" transform="translate(136 293.757) rotate(45)" stroke="#373737" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      </g>
+    </g>
+    <path  id="Subtraction_2" data-name="Subtraction 2" d="M7629,8000h-12a3,3,0,0,1-3-3v-1h2v1a1,1,0,0,0,1,1h12a1,1,0,0,0,1-1v-1h2v1A3,3,0,0,1,7629,8000Zm-13-13h-2v-2a3,3,0,0,1,3-3h12a3,3,0,0,1,3,3v2h-2v-2a1,1,0,0,0-1-1h-12a1,1,0,0,0-1,1v2Z" transform="translate(-7504 -7666)"/>
+  </g>
+</svg>

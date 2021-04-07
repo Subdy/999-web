@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64" height="41" viewBox="0 0 64 41">
+  <defs>
+    <filter id="Rectangle_2501" x="0" y="0" width="64" height="41" filterUnits="userSpaceOnUse">
+      <feOffset dy="2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.078"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clip-path">
+      <rect width="12" height="12" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Group_4926" data-name="Group 4926" transform="translate(-289 -122)">
+    <g transform="matrix(1, 0, 0, 1, 289, 122)" filter="url(#Rectangle_2501)">
+      <rect id="Rectangle_2501-2" data-name="Rectangle 2501" width="46" height="23" rx="3" transform="translate(9 7)" fill="#fff"/>
+    </g>
+    <g id="Component_210_18" data-name="Component 210 – 18" transform="translate(315 135)" clip-path="url(#clip-path)">
+      <rect id="Rectangle_1455" data-name="Rectangle 1455" width="12" height="12" transform="translate(0)" fill="none"/>
+      <path id="Union_45" data-name="Union 45" d="M1,7.078a1,1,0,0,1-1-1V1A1,1,0,0,1,1,0h.359a1,1,0,0,1,1,1V6.078a1,1,0,0,1-1,1Zm8.048-.149-4.7-2.743a.744.744,0,0,1,0-1.332L9.048.11a.779.779,0,0,1,1.175.706V6.224A.817.817,0,0,1,9.386,7,.853.853,0,0,1,9.048,6.928Z" transform="translate(0 2)" fill="#373737"/>
+    </g>
+  </g>
+</svg>

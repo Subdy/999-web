@@ -1,0 +1,29 @@
+<ion-header class="ion-no-border" mode="ios">
+    <ion-toolbar>
+        <ion-title>
+            <ion-searchbar placeholder="{{'Search ...' | translate}}" type="text"
+                (ionChange)="search($event.detail.value)" (ionCancel)="cancel($event)" [debounce]="250"
+                showCancelButton="always" cancelButtonText="{{'Cancel' | translate}}"></ion-searchbar>
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-text color="vh-black" class="no-data" *ngIf="!searchList.length">
+        {{'Not found' | translate}}
+    </ion-text>
+
+    <ion-grid fixed>
+        <ion-row>
+            <ion-col size="12">
+                <ion-virtual-scroll [items]="searchList" [approxItemHeight]="44">
+                    <ion-item *virtualItem="let item" class="product-item ion-no-padding"
+                        (click)="selectPhoneCode(item)">
+                        <ion-label>{{item.country}}</ion-label>
+                        <ion-label style="max-width: fit-content;">({{item.code}})</ion-label>
+                    </ion-item>
+                </ion-virtual-scroll>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+</ion-content>

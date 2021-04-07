@@ -1,0 +1,7 @@
+{
+  "name": "Cloudcam Viethas",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

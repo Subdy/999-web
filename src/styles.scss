@@ -1,0 +1,526 @@
+/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+* {
+  font-family: "Roboto", sans-serif;
+}
+/**Ion header */
+ion-header ion-buttons {
+  & > ion-back-button {
+    height: 44px !important;
+    font-size: 1rem !important;
+    margin: 0 2px;
+    padding: 0 2px;
+  }
+  & > ion-button {
+    height: 44px !important;
+    --padding-start: 0 !important;
+    --padding-end: 0 !important;
+    .vh-icon {
+      font-size: 1.5rem !important;
+    }
+    .ion-icon {
+      font-size: 1.8rem !important;
+    }
+  }
+}
+.error-message {
+  color: var(--ion-color-vh-red);
+  font-size: 0.8rem;
+  text-align: left;
+}
+//////////////////////////////CSS_COMPONENT//////////////////////////////
+
+.alert-input .alert-wrapper {
+  @media only screen and (max-width: 768px) {
+    position: absolute;
+    top: 10%;
+  }
+  @media only screen and (min-width: 768px) {
+    position: absolute;
+    top: 35%;
+  }
+}
+/** Toast Ctrl*/
+.alert-toast {
+  --background: var(--ion-color-vh-red);
+  --color: var(--ion-color-vh-white);
+}
+.success-toast {
+  --background: var(--ion-color-vh-green);
+  --color: var(--ion-color-vh-white);
+}
+/** Toast Ctrl*/
+/** Loading Ctrl */
+.current-loading {
+  --spinner-color: var(--ion-color-vh-green);
+  --backdrop-opacity: 0.1;
+}
+.transparent-loading {
+  --background: transparent;
+  & > .sc-ion-loading-md {
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+  }
+}
+/** Loading Ctrl */
+/**Action sheet Ctrl */
+.action-sheet-red {
+  --button-color: var(--ion-color-vh-red);
+  --color: var(--ion-color-vh-red);
+  --button-color-hover: var(--ion-color-vh-red);
+  --button-color-selected: var(--ion-color-vh-red);
+  --button-color-activated: var(--ion-color-vh-red);
+}
+.action-sheet-current {
+  --button-color: var(--ion-color-vh-green);
+  --color: var(--ion-color-vh-green);
+  --button-color-hover: var(--ion-color-vh-green);
+  --button-color-selected: var(--ion-color-vh-green);
+  --button-color-activated: var(--ion-color-vh-green);
+}
+.action-sheet-black {
+  --button-color: var(--ion-color-vh-black);
+  --color: var(--ion-color-vh-black);
+  --button-color-hover: var(--ion-color-vh-black);
+  --button-color-selected: var(--ion-color-vh-black);
+  --button-color-activated: var(--ion-color-vh-black);
+}
+/**Action sheet Ctrl */
+/**Ion header */
+ion-header ion-buttons {
+  & > ion-back-button {
+    height: 44px !important;
+  }
+  & > ion-button {
+    height: 44px !important;
+    --padding-start: 0 !important;
+    --padding-end: 0 !important;
+    .vh-icon {
+      font-size: 1.5rem !important;
+    }
+    .ion-icon {
+      font-size: 1.8rem !important;
+    }
+  }
+}
+/**Ion header */
+/**Ion button **/
+ion-segment-button,
+ion-item,
+ion-button,
+ion-item-divider {
+  font-size: 0.9rem;
+}
+ion-header ion-title {
+  font-size: 1rem;
+}
+
+/** Modal controller */
+.modal-transparent .modal-wrapper {
+  --background: transparent;
+  height: 250px;
+}
+.modal-add-area-desktop .modal-wrapper {
+  height: 250px;
+  border-radius: 5px;
+}
+/** Modal controller */
+
+//////////////////////////////CSS_COMPONENT//////////////////////////////
+.ion-activatable {
+  position: relative;
+  overflow: hidden;
+}
+
+ion-title {
+  padding: 0;
+  text-transform: capitalize;
+}
+.color-green {
+  color: var(--ion-color-vh-green) !important;
+}
+.color-red {
+  color: var(--ion-color-vh-red) !important;
+}
+:focus {
+  outline: none;
+}
+
+ion-back-button {
+  font-size: 0.95rem !important;
+  margin: 0 5px;
+}
+
+.center {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  ion-col {
+    text-align: center;
+  }
+  // img {
+  //   width: 300px;
+  // }
+}
+// che màn hình thay cho loading...
+.shield {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.border {
+  border: 1px solid #c8c7cc;
+  border-radius: 4px;
+  padding-right: 1px;
+}
+
+.small_size {
+  font-size: 0.8rem !important;
+}
+
+.medium_size {
+  font-size: 0.9rem !important;
+}
+.large_size {
+  font-size: 1rem !important;
+}
+.sc-ion-select-popover-ios {
+  --border-width: 0;
+  --inner-border-width: 0;
+}
+ion-header ion-toolbar ion-title {
+  font-size: 1rem !important;
+}
+
+.size-icon-header {
+  font-size: 1.4rem !important;
+}
+
+.size-icon {
+  font-size: 1.8rem !important;
+}
+
+.info_pay {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  right: 0;
+  z-index: 12;
+  background: white;
+  border-radius: 10px 10px 0 0;
+  box-shadow: 0px 2px 6px #00000014;
+}
+
+.custom-popup {
+  // background-color: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.offline {
+  width: 100%;
+  height: 40px;
+  position: absolute;
+  z-index: 2;
+  background: gray;
+  left: 0;
+  top: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.5;
+}
+
+ion-button {
+  --background-activated: var(--ion-color-vh-gray);
+  --background-activated-opacity: 0;
+  --background-focused: var(--ion-color-vh-gray);
+  --background-hover: none;
+  --background: var(--ion-color-vh-white);
+}
+
+ion-button:active {
+  --background: rgb(218, 218, 218);
+}
+
+ion-button:focus {
+  outline: none;
+}
+
+ion-item {
+  --background-activated: none;
+}
+
+ion-card:focus {
+  outline: none;
+}
+
+button.picker-button.ion-activatable {
+  color: var(--ion-color-vh-green);
+}
+
+ion-item.item-label.item.in-list.ion-activatable.ion-focusable.hydrated {
+  color: var(--ion-color-vh-black);
+  --color-activated: var(--ion-color-vh-black);
+}
+
+button.picker-opt.picker-opt-selected {
+  color: var(--ion-color-vh-black);
+}
+
+button.alert-button.ion-focusable.ion-activatable {
+  color: var(--ion-color-vh-green);
+}
+
+.alert-title {
+  color: var(--ion-color-vh-black) !important;
+}
+
+.alert-radio-label {
+  color: var(--ion-color-vh-black) !important;
+}
+
+.alert-sub-title {
+  color: var(--ion-color-vh-black) !important;
+}
+
+.alert-message {
+  color: var(--ion-color-vh-black) !important;
+}
+
+.alert-input-group {
+  color: var(--ion-color-vh-black) !important;
+}
+
+// ion-select- popover
+ion-popover {
+  .popover-wrapper {
+    .popover-content {
+      width: fit-content;
+      max-width: 500px;
+    }
+  }
+}
+
+ion-radio {
+  --color-checked: var(--ion-color-vh-green) !important;
+}
+
+.alert-radio-inner {
+  border-color: var(--ion-color-vh-green) !important;
+}
+
+input[disabled] {
+  opacity: 0.8 !important;
+  --opacity: 0.8 !important;
+}
+// seachbar
+.sc-ion-searchbar-ios-h {
+  height: 35px !important;
+  background: #8e8e933d;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  border-radius: 10px;
+  text-align: start;
+  color: var(--ion-color-vh-black) !important;
+}
+.searchbar-input-container.sc-ion-searchbar-ios {
+  height: 35px !important;
+  input {
+    font-size: 0.9rem !important;
+  }
+}
+.searchbar-disabled.sc-ion-searchbar-ios-h {
+  opacity: 1 !important;
+  cursor: pointer;
+}
+
+.background {
+  --background: #f7f7f7;
+}
+
+.validation-errors {
+  font-size: 0.6rem;
+  color: var(--ion-color-vh-red);
+}
+
+ion-item {
+  --background-activated: white;
+}
+
+ion-refresher ion-refresher-content {
+  --color: var(--ion-color-vh-green) !important;
+  .refresher-pulling-icon {
+    color: var(--ion-color-vh-green) !important;
+  }
+  .refresher-pulling-text,
+  .refresher-refreshing-text {
+    color: var(--ion-color-vh-black) !important;
+  }
+}
+
+ion-refresher.refresher-native ion-spinner {
+  color: var(--ion-color-vh-green) !important;
+}
+
+.alert-head {
+  .alert-title {
+    font-size: 1.2rem !important;
+    font-weight: normal !important;
+  }
+}
+
+ion-picker {
+  touch-action: none;
+}
+.ant-pagination-item-active {
+  border-color: var(--ion-color-vh-green) !important;
+  a {
+    color: var(--ion-color-vh-green) !important;
+  }
+}
+.vh-select {
+  background-color: var(--ion-color-vh-green) !important;
+  cursor: pointer !important;
+  --background-color-activated: var(--ion-color-vh-green_light) !important;
+  color: var(--ion-color-vh-white) !important;
+  border-radius: 0.6rem !important;
+  margin: 0 0.6rem 0.6rem !important;
+}
+
+.vh-noselect {
+  height: 0px !important;
+  margin: 0px !important;
+  padding: 0px !important;
+}
+
+.no-data {
+  font-size: 0.8rem;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+
+.action-sheet {
+  --button-color: var(--ion-color-vh-green);
+}
+.action-sheet-button-red {
+  --button-color: var(--ion-color-vh-red);
+}
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-selected {
+  color: var(--ion-color-vh-green) !important;
+  border-bottom: 2px solid var(--ion-color-vh-green) !important;
+}
+.ant-menu-submenu-title .anticon {
+  font-size: 24px !important;
+}
+.center-all-tag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.full-height {
+  height: 100% !important;
+}
+.full-width {
+  width: 100% !important;
+}
+.center-all-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.center-align {
+  display: flex;
+  align-items: center;
+}
+.right-tag {
+  display: flex;
+  justify-content: flex-end;
+}
+/**Custom scrollbar*/
+.ant-table-body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+  background-color: #f5f5f5;
+  border-radius: 10px;
+}
+
+.ant-table-body::-webkit-scrollbar {
+  width: 5px;
+  background-color: #f5f5f5;
+}
+
+.ant-table-body::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #fff;
+  background-image: -webkit-gradient(linear, 40% 0%, 75% 84%, from(#cccccc), to(#cccccc), color-stop(0.6, #cccccc));
+}
+.ant-table-body::-webkit-scrollbar-thumb:horizontal {
+  height: 5px;
+}
+.ant-table-body::-webkit-scrollbar:horizontal {
+  height: 5px !important;
+  background-color: #f5f5f5;
+}
+
+/***/
+/**Custom scrollbar*/
+.content::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+  background-color: #f5f5f5;
+  border-radius: 10px;
+}
+
+.content::-webkit-scrollbar {
+  width: 5px;
+  background-color: #f5f5f5;
+}
+
+.content::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #fff;
+  background-image: -webkit-gradient(linear, 40% 0%, 75% 84%, from(#cccccc), to(#cccccc), color-stop(0.6, #cccccc));
+}
+.ant-btn-primary {
+  color: #fff !important;
+  background: var(--ion-color-vh-green) !important;
+  border-color: var(--ion-color-vh-green) !important;
+}
+.ant-checkbox-checked::after {
+  background-color: var(--ion-color-vh-green) !important;
+  border: 1px solid var(--ion-color-vh-green);
+  color: var(--ion-color-vh-green) !important;
+}
+.ant-checkbox-checked .ant-checkbox-inner {
+  background-color: var(--ion-color-vh-green) !important;
+  border-color: var(--ion-color-vh-green) !important;
+}
+.ant-collapse-content > .ant-collapse-content-box {
+  padding: 0px 32px !important;
+}
+.ant-collapse-icon-position-right > .ant-collapse-item > .ant-collapse-header {
+  padding: 0px 40px 0px 16px !important;
+}
+.ant-collapse > .ant-collapse-item > .ant-collapse-header .ant-collapse-arrow {
+  padding: 0 !important;
+}
+.scroll-file {
+  .ant-spin-container {
+    padding-bottom: 80% !important;
+  }
+}

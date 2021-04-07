@@ -1,0 +1,89 @@
+.login {
+    top: 50%;
+    overflow-y: auto;
+    max-width: 490px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    height: 80%;
+    transform: translate(-50%, -50%);
+    &-form {
+        padding: 0 24px;
+        &-item {
+            --padding-start: 8px;
+            --padding-end: 8px;
+            --inner-padding-end: 0px;
+            --background: transparent;
+            border: 1px var(--ion-color-vh-gray) solid;
+            border-radius: 64px;
+            margin: 8px 0;
+            &-red {
+                border-color: var(--ion-color-vh-red);
+                ion-icon {
+                    color: var(--ion-color-vh-red);
+                }
+            }
+            &-normal {
+                border-color: var(--ion-color-vh-gray);
+                ion-icon {
+                    color: var(--ion-color-vh-gray);
+                }
+            }
+            ion-label {
+                --color: var(--ion-color-vh-gray);
+                display: flex;
+                align-items: flex-end;
+                ion-icon {
+                    font-size: 1.5rem;
+                    padding-right: 4px;
+                }
+                ion-text {
+                    font-size: 0.9rem;
+                }
+            }
+            ion-input {
+                font-size: 1rem;
+                --padding-end: 0;
+            }
+        }
+        &-fopass {
+            text-align: end;
+            &-btn {
+                align-self: flex-start;
+                font-size: 0.8rem;
+            }
+        }
+        &-login {
+            --background: var(--ion-color-vh-green);
+            text-transform: inherit;
+            height: 48px;
+            font-size: 1rem;
+        }
+    }
+    .register-nav {
+        text-align: center;
+        a {
+            color: var(--ion-color-vh-green);
+            text-decoration: none;
+            font-weight: bold;
+        }
+    }
+}
+
+.lang {
+    //height: 44px;
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+    &-item {
+        text-align: center;
+        padding: 0;
+        &-btn {
+            align-self: center;
+            text-transform: inherit;
+            color: var(--ion-color-vh-black);
+        }
+    }
+}

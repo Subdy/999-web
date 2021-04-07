@@ -1,0 +1,17 @@
+{
+  "appId": "com.viethas.cloudcamvh",
+  "appName": "Cloudcam Viethas",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "dist/CloudCameraVH",
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 0
+    },
+    "LocalNotifications": {
+      "smallIcon": "ic_stat_name",
+      "iconColor": "#00A859"
+    }
+  },
+  "cordova": {}
+}

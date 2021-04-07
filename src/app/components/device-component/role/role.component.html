@@ -1,0 +1,19 @@
+<div style="position: relative;">
+  <div class="offline" *ngIf="data.status" (click)="tryConnect.emit(true)">
+    <ion-label color="vh-orange" class="ion-no-margin ion-text-end small-size ">
+      <span *ngIf="!try_conect_again">{{'Disconnect' | translate}}</span>
+      <span *ngIf="try_conect_again">{{'Connecting' | translate}}...</span>
+    </ion-label>
+  </div>
+  <ion-card [class.border_green]="on" class="ion-no-margin" [disabled]="data.status">
+    <ion-item lines="none" (click)="controlOnOff()">
+      <ion-icon [ngStyle]="{'color': on ? 'var(--ion-color-vh-green)' : '#8e8e93' }" [src]="data.src" class="size-icon">
+      </ion-icon>
+      <ion-icon slot="end" [color]="on ? 'vh-green': 'vh-gray'" class="size-icon" name="power-outline"></ion-icon>
+    </ion-item>
+    <ion-item lines="none">
+
+      <ion-label class="ion-no-margin medium-size">{{data.name}}</ion-label>
+    </ion-item>
+  </ion-card>
+</div>

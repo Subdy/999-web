@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="41" height="64" viewBox="0 0 41 64">
+  <defs>
+    <filter id="Rectangle_2510" x="0" y="0" width="41" height="64" filterUnits="userSpaceOnUse">
+      <feOffset dy="2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.078"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_4932" data-name="Group 4932" transform="translate(-312 -372.5)">
+    <g transform="matrix(1, 0, 0, 1, 312, 372.5)" filter="url(#Rectangle_2510)">
+      <rect id="Rectangle_2510-2" data-name="Rectangle 2510" width="46" height="23" rx="3" transform="translate(9 53) rotate(-90)" fill="#fff"/>
+    </g>
+    <rect id="Rectangle_2514" data-name="Rectangle 2514" width="7" height="0.7" rx="0.35" transform="translate(335.851 420.35) rotate(180)" fill="#373737"/>
+    <path id="Union_70" data-name="Union 70" d="M13564.149,15611.649v-2.8h-2.8a.351.351,0,1,1,0-.7h2.8v-2.8a.351.351,0,1,1,.7,0v2.8h2.8a.351.351,0,1,1,0,.7h-2.8v2.8a.351.351,0,1,1-.7,0Z" transform="translate(13897.001 15996.502) rotate(180)" fill="#373737"/>
+  </g>
+</svg>

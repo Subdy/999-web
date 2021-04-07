@@ -1,0 +1,63 @@
+/** Toast Ctrl*/
+.alert-toast {
+  --background: var(--ion-color-vh-red);
+  --color: var(--ion-color-vh-white);
+}
+.success-toast {
+  --background: var(--ion-color-vh-green);
+  --color: var(--ion-color-vh-white);
+}
+/** Toast Ctrl*/
+/** Loading Ctrl */
+.current-loading {
+  --spinner-color: var(--ion-color-vh-green);
+  --backdrop-opacity: 0.1;
+}
+.transparent-loading {
+  --background: transparent;
+  & > .sc-ion-loading-md {
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+  }
+}
+/** Loading Ctrl */
+/**Action sheet Ctrl */
+.action-sheet-red {
+  --button-color: var(--ion-color-vh-red);
+  --color: var(--ion-color-vh-red);
+  --button-color-hover: var(--ion-color-vh-red);
+  --button-color-selected: var(--ion-color-vh-red);
+  --button-color-activated: var(--ion-color-vh-red);
+}
+.action-sheet-current {
+  --button-color: var(--ion-color-vh-green);
+  --color: var(--ion-color-vh-green);
+  --button-color-hover: var(--ion-color-vh-green);
+  --button-color-selected: var(--ion-color-vh-green);
+  --button-color-activated: var(--ion-color-vh-green);
+}
+.action-sheet-black {
+  --button-color: var(--ion-color-vh-black);
+  --color: var(--ion-color-vh-black);
+  --button-color-hover: var(--ion-color-vh-black);
+  --button-color-selected: var(--ion-color-vh-black);
+  --button-color-activated: var(--ion-color-vh-black);
+}
+/**Action sheet Ctrl */
+
+/** Modal controller */
+.modal-transparent .modal-wrapper {
+  --background: transparent;
+}
+.modal-print-A4 .modal-wrapper {
+  @media only screen and (min-width: 768px) {
+    min-width: 800px !important;
+  }
+}
+.modal-print-K80 .modal-wrapper,
+.modal-print-K57 .modal-wrapper {
+  @media only screen and (min-width: 768px) {
+    max-width: 420px !important;
+  }
+}
+/** Modal controller */

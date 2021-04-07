@@ -1,0 +1,31 @@
+<nz-layout>
+    <div nz-row class='body'>
+        <div nz-col nzSpan="6" class="left">
+            <div class="color">
+                <div class='info'>
+                    <img [src]="service.setBackgroundImg()" alt="">
+                    <ion-grid class="ion-no-padding">
+                        <ion-row class="ion-no-padding">
+                            <ion-col>
+                                <ion-card (click)="gotoPratice()" class="out">
+                                    <div class="in">Đọc thư</div>
+                                </ion-card>
+                                <ion-card (click)="gotoMusic()" class="out">
+                                    <div class="in">Nghe nhạc</div>
+                                </ion-card>
+                                <ion-card (click)="openTheme()" class="out">
+                                    <div class="in">Giao diện</div>
+                                </ion-card>
+                            </ion-col>
+                        </ion-row>
+                    </ion-grid>
+                </div>
+            </div>
+        </div>
+        <div nz-col nzSpan="18" class="right">
+            <div class="color">
+                <router-outlet></router-outlet>
+            </div>
+        </div>
+    </div>
+</nz-layout>
