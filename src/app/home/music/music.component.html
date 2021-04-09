@@ -1,36 +1,5 @@
-<ion-footer class="ion-no-border" mode="ios">
-  <ion-toolbar>
-    <ion-row class="ion-text-center control">
-      <ion-spinner style="right: 50%; color: white;position: absolute;" *ngIf="spiner" name="crescent"></ion-spinner>
-      <ion-col size="12">
-        <ion-range mode="ios" #range [(ngModel)]="progress" color="hu-red" (touchend)="seek()" (mouseup)="seek()">
-        </ion-range>
-      </ion-col>
-      <ion-col size="12">
 
-        <ion-button fill="clear" (click)="prev()" class="color">
-          <ion-icon name="play-skip-back-outline"></ion-icon>
-        </ion-button>
-
-        <ion-button fill="clear" (click)="togglePlayer(false)" *ngIf="!isPlaying" class="color">
-          <ion-icon slot="icon-only" name="play"></ion-icon>
-        </ion-button>
-
-        <ion-button fill="clear" (click)="togglePlayer(true)" *ngIf="isPlaying" class="color">
-          <ion-icon slot="icon-only" name="pause"></ion-icon>
-        </ion-button>
-
-        <ion-button fill="clear" (click)="next()" class="color">
-
-          <ion-icon name="play-skip-forward-outline"></ion-icon>
-        </ion-button>
-
-      </ion-col>
-    </ion-row>
-  </ion-toolbar>
-</ion-footer>
-<ion-content>
-  <ion-grid fixed>
+  <ion-grid fixed  style="max-height: 70%;">
     <ion-row>
       <ion-col *ngFor="let item of show" size="6" style="padding-bottom: 8px;">
         <div (click)="start(item)">
@@ -49,9 +18,8 @@
       </ion-col>
     </ion-row>
   </ion-grid>
-</ion-content>
-<!-- <ion-content style="max-height: 25vh;" scrollY='false'>
-  <ion-row class="ion-text-center control" style="padding-bottom: 80px;">
+<ion-content scrollY='false' style="max-height: 25vh;">
+  <ion-row class="ion-text-center control">
     <ion-spinner style="right: 50%; color: white;position: absolute;" *ngIf="spiner" name="crescent"></ion-spinner>
     <ion-col size="12">
       <ion-range mode="ios" #range [(ngModel)]="progress" color="hu-red" (touchend)="seek()" (mouseup)="seek()">
@@ -78,4 +46,4 @@
 
     </ion-col>
   </ion-row>
-</ion-content> -->
+</ion-content>

@@ -26,12 +26,13 @@ ion-content {
             // position: absolute;
             // bottom: 50px;
             .in {
-                width: 97%;
+                width: 98%;
                 height: 98%;
                 align-items: center;
                 background-color: var(--ion-color-hu-green);
                 display: flex;
                 border-radius: 16px;
+                cursor: pointer;
                 ion-text {
                     font-family: cursive;
                     color: var(--ion-color-hu-red);
@@ -71,12 +72,13 @@ ion-content {
             // position: absolute;
             // bottom: 50px;
             .in {
-                width: 97%;
+                width: 98%;
                 height: 98%;
                 align-items: center;
                 display: flex;
                 border-radius: 16px;
                 flex-direction: column;
+                cursor: pointer;
                 img {
                     height: 100%;
                     width: 100%;

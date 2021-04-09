@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { Platform } from '@ionic/angular';
 import { AnimationOptions } from 'ngx-lottie';
+import { FirebaseService } from './service/firebase.service';
 
 @Component({
   selector: 'app-root',
@@ -16,12 +17,19 @@ export class AppComponent {
   constructor(
     public platform: Platform,
     private router: Router,
+    private service: FirebaseService,
   ) {
-    console.log("A")
+    this.setImg(),
+      this.service.checkTheme()
     if (platform.width() < 768) this.navigateMobile()
     else this.navigateDesktop()
   }
-
+  setImg() {
+    let img = this.service.getValue("hulu-img")
+    if (!img) {
+      this.service.setValue('hulu-img', { img: '/assets/1.jpg', id: 1 })
+    }
+  }
   private navigateDesktop(): void {
     this.router.navigate([''])
   }

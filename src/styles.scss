@@ -3,6 +3,7 @@
 * {
   font-family: "Roboto", sans-serif;
 }
+
 /**Ion header */
 ion-header ion-buttons {
   & > ion-back-button {
@@ -60,6 +61,7 @@ ion-header ion-buttons {
   & > .sc-ion-loading-md {
     -webkit-box-shadow: none !important;
     box-shadow: none !important;
+    margin-left: 25vw;
   }
 }
 /** Loading Ctrl */

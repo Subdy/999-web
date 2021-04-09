@@ -3,7 +3,7 @@
     <ion-slides style="height: 100%;" [options]="option" #slides (ionSlideWillChange)="getIndex()">
         <ion-slide [ngClass]="(item.id %2 == 0)?' theme1':'theme2'" *ngFor="let item of char">
             <div class='out' [id]='item.id'>
-                <div class="in">
+                <div class="in" (click)="selectLetter(index)">
                     <img [src]="item.img" alt="">
                     <ion-text>#{{item.id+1}}</ion-text>
                     <p><sub>‘‘</sub>{{item.title}}.<sub>’’</sub></p>
