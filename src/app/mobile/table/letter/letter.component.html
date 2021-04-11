@@ -1,0 +1,21 @@
+<ion-header class="ion-no-border" mode="ios">
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-icon style="font-size: 1.8rem;" (click)="goBack()" name="arrow-back-outline"></ion-icon>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+<ion-content scrollY="false">
+    <img class="background" [src]="service.setBackgroundImg()" alt="">
+    <ion-slides style="height: 100%;" [options]="option" #slides (ionSlideWillChange)="getIndex()">
+        <ion-slide [ngClass]="(item.id %2 == 0)?' theme1':'theme2'" *ngFor="let item of char">
+            <div class='out' [id]='item.id'>
+                <div class="in" (click)="selectLetter(index)">
+                    <img [src]="item.img" alt="">
+                    <ion-text>#{{item.id+1}}</ion-text>
+                    <p><sub>‘‘</sub>{{item.title}}.<sub>’’</sub></p>
+                </div>
+            </div>
+        </ion-slide>
+    </ion-slides>
+</ion-content>

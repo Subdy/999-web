@@ -6,9 +6,14 @@ import { MobileRoutingModule } from './mobile-routing.module';
 import { RouteReuseStrategy } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { TranslateModule } from '@ngx-translate/core';
+import { ThemeComponent } from './theme/theme.component';
+import { VhComponent } from '../components/vh-component/vh-component';
+import { FirebaseService } from '../service/firebase.service';
+import { MusicComponent } from '../mobile/music/music.component';
 
 @NgModule({
-  declarations: [MobileComponent],
+  declarations: [MobileComponent, ThemeComponent, MusicComponent],
+  entryComponents: [ThemeComponent],
   imports: [
     CommonModule,
     IonicModule,
@@ -17,7 +22,7 @@ import { TranslateModule } from '@ngx-translate/core';
     MobileRoutingModule,
     TranslateModule,
   ],
-  providers: [
+  providers: [FirebaseService,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ]
 })

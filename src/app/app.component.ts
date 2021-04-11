@@ -36,14 +36,8 @@ export class AppComponent {
   private navigateMobile(): void {
     this.router.navigate(['/mobile'])
   }
-  changeNum: number = 1;
   public change() {
-    if (this.changeNum == 3) {
-      this.changeNum = 1
-    } else {
-      this.changeNum += 1
-    }
-    this.options = { loop: 0, path: `/assets/splash/${this.changeNum}.json` }
+    this.options = { loop: 0, path: `/assets/splash/1.json` }
   }
 
 }

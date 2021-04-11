@@ -1,0 +1,17 @@
+<ion-header class="ion-no-border" mode="ios">
+  <ion-toolbar>
+    <ion-icon (click)="goBack()" name="close-outline"></ion-icon>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid style="padding-bottom: 50px;">
+    <ion-row class="ion-no-padding">
+      <ion-col size='6' *ngFor="let item of img">
+        <div (click)="chooseTheme(item)" [ngClass]="{'theme-active': item.id == active}" class="img">
+          <img [src]="item.img" alt="">
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

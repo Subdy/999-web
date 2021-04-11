@@ -1,5 +1,18 @@
-<!-- <ion-app>
-    <ion-router-outlet mode='md'></ion-router-outlet>
-</ion-app> -->
-
-<p>hello mobile</p>
+<ion-content>
+    <ion-grid class="ion-no-padding">
+        <ion-row class="ion-no-padding">
+            <img [src]="img" alt="">
+            <ion-col>
+                <ion-card (click)="gotoPratice()" class="out">
+                    <div class="in">Đọc thư</div>
+                </ion-card>
+                <ion-card (click)="gotoMusic()" class="out">
+                    <div class="in">Nghe nhạc</div>
+                </ion-card>
+                <ion-card (click)="openTheme()" class="out">
+                    <div class="in">Giao diện</div>
+                </ion-card>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+</ion-content>

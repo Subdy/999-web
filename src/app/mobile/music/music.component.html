@@ -1,0 +1,55 @@
+<ion-header class="ion-no-border" mode="ios">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-icon style="font-size: 1.8rem;" (click)="goBack()" name="arrow-back-outline"></ion-icon>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-grid fixed style="max-height: 70%;">
+  <ion-row>
+    <ion-col *ngFor="let item of show" size="12" style="padding-bottom: 8px;">
+      <div (click)="start(item)">
+        <ion-avatar slot="start" style="min-width: 60px;">
+          <img [src]="item.img" />
+        </ion-avatar>
+        <ion-row style="display: flex; flex-direction: column;" class="ion-no-padding">
+          <ion-text [ngClass]="{'active': item.id === active}" class="ion-no-padding" size="12">
+            {{item.name}}
+          </ion-text>
+          <ion-text style="font-size: 0.8rem; color: darkslategray;font-weight: 100;">
+            {{item.sub}}
+          </ion-text>
+        </ion-row>
+      </div>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+<ion-content scrollY='false' style="max-height: 25vh;">
+  <ion-row class="ion-text-center control">
+    <ion-spinner style="right: 50%; color: white;position: absolute;" *ngIf="spiner" name="crescent"></ion-spinner>
+    <ion-col size="12">
+      <ion-range mode="ios" #range [(ngModel)]="progress" color="hu-red" (touchend)="seek()" (mouseup)="seek()">
+      </ion-range>
+    </ion-col>
+    <ion-col size="12">
+
+      <ion-button fill="clear" (click)="prev()" class="color">
+        <ion-icon name="play-skip-back-outline"></ion-icon>
+      </ion-button>
+
+      <ion-button fill="clear" (click)="togglePlayer(false)" *ngIf="!isPlaying" class="color">
+        <ion-icon slot="icon-only" name="play"></ion-icon>
+      </ion-button>
+
+      <ion-button fill="clear" (click)="togglePlayer(true)" *ngIf="isPlaying" class="color">
+        <ion-icon slot="icon-only" name="pause"></ion-icon>
+      </ion-button>
+
+      <ion-button fill="clear" (click)="next()" class="color">
+
+        <ion-icon name="play-skip-forward-outline"></ion-icon>
+      </ion-button>
+
+    </ion-col>
+  </ion-row>
+</ion-content>

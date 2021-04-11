@@ -1,0 +1,33 @@
+ion-content {
+    --background: var(--ion-color-hu-green);
+    p {
+        text-align: center;
+        font-size: 1rem;
+        font-weight: 700;
+        padding: 4px;
+    }
+    div {
+        --background: transparent;
+        display: flex;
+        align-items: center;
+        padding: 4px;
+        border-bottom: 1px solid gainsboro;
+        ion-text {
+            margin-left: 16px;
+            font-weight: 800;
+            font-size: 0.9rem;
+            color: black !important;
+        }
+        sub {
+            font-size: 2rem;
+        }
+    }
+}
+ion-header {
+    ion-toolbar {
+        --background: var(--ion-color-hu-green);
+    }
+    ion-title {
+        padding: 0 16px;
+    }
+}
