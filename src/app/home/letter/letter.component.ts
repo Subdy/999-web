@@ -84,7 +84,7 @@ export class LetterComponent implements OnInit {
   getData(data): any {
     let love = this.storageService.getData('hulu-love')
     this.char = data.map((item) => {
-      let b = Math.floor(Math.random() * 9) + 1
+      let b = Math.floor(Math.random() * 19) + 1
       if (item.id % 2 == 0) this.img = 'assets/left/' + b + '.svg'
       else this.img = 'assets/right/' + b + '.svg'
       for (let i in love) {

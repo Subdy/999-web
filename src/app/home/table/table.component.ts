@@ -96,7 +96,7 @@ export class TableComponent implements OnInit {
 
   ngOnInit() {
     this.show = this.table.map((item) => {
-      let b = Math.floor(Math.random() * 9) + 1
+      let b = Math.floor(Math.random() * 19) + 1
       let img = 'assets/left/' + b + '.svg'
       return { ...item, img: img }
     })
