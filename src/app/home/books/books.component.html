@@ -1,0 +1,25 @@
+<ion-content>
+  <ion-grid class="ion-no-padding">
+    <ion-icon (click)="goBack()" name="close-outline"></ion-icon>
+    <ion-row class="ion-no-padding">
+      <img [src]="img" alt="">
+      <ion-col>
+        <ion-card
+          (click)="openBuy('https://go.isclix.com/deep_link/5651355786685655261/4839282299983657250?url=https%3A%2F%2Fwww.fahasa.com%2F999-la-thu-gui-cho-chinh-minh-an-ban-ky-niem-nam-2021-bia-cung.html' )"
+          class="out" button>
+          <div class="in">Xem tại Fahasha</div>
+        </ion-card>
+        <ion-card
+          (click)="openBuy('https://go.isclix.com/deep_link/5651355786685655261/5259788228080443058?url=https%3A%2F%2Fnewshop.vn%2Fcombo-999-la-thu-gui-cho-chinh-minh-tap-1-2.html' )"
+          class="out" button>
+          <div class="in">Xem tại New Shop</div>
+        </ion-card>
+        <ion-card
+          (click)="openBuy('https://go.isclix.com/deep_link/5651355786685655261/4348617685007298674?url=https%3A%2F%2Fwww.vinabook.com%2F999-la-thu-gui-cho-chinh-minh-mong-ban-tro-thanh-phien-ban-hoan-hao-nhat-tai-p92903.html' )"
+          class="out" button>
+          <div class="in">Xem tại Vinabook</div>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

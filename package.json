@@ -49,7 +49,6 @@
     "@ionic/angular": "^5.5.1",
     "@ngx-translate/core": "^13.0.0",
     "@ngx-translate/http-loader": "^6.0.0",
-    "axios": "^0.21.0",
     "cc.fovea.cordova.purchase": "^10.5.3",
     "cleave.js": "^1.6.0",
     "cordova-plugin-bluetooth-serial": "^0.4.7",
@@ -69,7 +68,6 @@
     "lottie-web": "^5.7.6",
     "ng-zorro-antd": "^11.1.0",
     "ngx-lottie": "^6.4.0",
-    "ngx-mqtt": "^6.12.0",
     "ngx-papaparse": "^5.0.0",
     "ngx-socket-io": "^3.2.0",
     "phonegap-plugin-barcodescanner": "^8.1.0",
@@ -78,7 +76,6 @@
     "swipe-event-listener": "^1.2.1",
     "tslib": "^2.0.0",
     "howler": "^2.2.1",
-    "vhmongo": "^1.2.8",
     "xlsx": "^0.16.9",
     "zone.js": "~0.10.2"
   },

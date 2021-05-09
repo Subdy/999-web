@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { NavController } from '@ionic/angular';
 import { FirebaseService } from '../service/firebase.service';
+import { BooksComponent } from './books/books.component';
 import { ThemeComponent } from './theme/theme.component';
 @Component({
   selector: 'app-home',
@@ -10,6 +11,9 @@ import { ThemeComponent } from './theme/theme.component';
 })
 export class HomeComponent implements OnInit {
   img: any = ''
+  best: any = [
+    { title: "Đắc Nhân Tâm", img: "", url: '' }
+  ]
   constructor(
     private router: Router,
     public service: FirebaseService,
@@ -38,6 +42,11 @@ export class HomeComponent implements OnInit {
       })
     })
   }
-
+  buyBook() {
+    this.service.showModal(BooksComponent, {}, true, true).then((modal) => {
+      modal.onWillDismiss().then((data) => {
+      })
+    })
+  }
 
 }

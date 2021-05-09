@@ -30,6 +30,7 @@ import { NZ_I18N, en_US } from 'ng-zorro-antd/i18n';
 import { DatePipe, registerLocaleData } from '@angular/common';
 import en from '@angular/common/locales/en';
 import { FirebaseService, StorageService } from './service/firebase.service';
+import { BooksComponent } from './home/books/books.component';
 registerLocaleData(en);
 
 export function createTranslateLoader(http: HttpClient) {
@@ -50,7 +51,8 @@ const routes: Routes = [
 ]
 
 @NgModule({
-  declarations: [AppComponent,],
+  declarations: [AppComponent, BooksComponent],
+  entryComponents: [BooksComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,

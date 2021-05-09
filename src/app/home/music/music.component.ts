@@ -25,7 +25,7 @@ export class MusicComponent implements OnInit {
     {
       id: 2,
       name: 'Before I Go - RKVC',
-      sub: 'Sẽ không bao giờ có bế tắc thật sự khi trong bạn còn niềm tin. Chỉ cần có niềm tin, bạn sẽ có hi vọng, sẽ tìm thấy con đường để bước tiếp',
+      sub: 'Yêu thương cho đi là yêu thương có thể giữ được mãi mãi',
       path: 'https://firebasestorage.googleapis.com/v0/b/music1-df235.appspot.com/o/Before%20I%20Go%20-%20RKVC.mp3?alt=media&token=5a1fb76e-8a50-4480-ac2a-7caf8f4bc27b',
     },
     {
@@ -43,7 +43,7 @@ export class MusicComponent implements OnInit {
     {
       id: 5,
       name: 'Forever Yours - Wayne Jones',
-      sub: 'Cuộc sống luôn có nhiều việc xảy ra không như ý, chúng ta không thể né tránh, điều duy nhất bạn có thể làm là thay đổi góc nhìn về nó',
+      sub: 'Nếu bạn không thể xây dựng một thành phố thì hãy xây lấy một trái tim hồng',
       path: 'https://firebasestorage.googleapis.com/v0/b/music1-df235.appspot.com/o/Forever%20Yours%20-%20Wayne%20Jones.mp3?alt=media&token=9fc97cc0-d8d5-4c94-bc6c-42d623d58f82',
     },
     {
@@ -91,7 +91,7 @@ export class MusicComponent implements OnInit {
     {
       id: 13,
       name: 'Sweetly My Heart - Asher Fulero',
-      sub: 'Cuộc sống hiện đại như một cỗ máy cuốn ta vào một guồng quay. Công nghệ càng phát triển, việc kết nối với nhau càng dễ dàng thì con người trở nên cô đơn hơn',
+      sub: ' Sự chia sẻ và tình yêu thương là điều quý giá nhất trên đời',
       path: 'https://firebasestorage.googleapis.com/v0/b/music1-df235.appspot.com/o/Sweetly%20My%20Heart%20-%20Asher%20Fulero.mp3?alt=media&token=d1a13a96-b6fe-445d-94aa-1ad283fe1d00',
     },
     {

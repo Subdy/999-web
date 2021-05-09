@@ -12,7 +12,6 @@ import { FirebaseService } from './service/firebase.service';
 export class AppComponent {
   public options: AnimationOptions = {
     path: '/assets/splash/1.json',
-    loop: 0
   };
   constructor(
     public platform: Platform,
@@ -37,7 +36,7 @@ export class AppComponent {
     this.router.navigate(['/mobile'])
   }
   public change() {
-    this.options = { loop: 0, path: `/assets/splash/1.json` }
+    this.options = { path: `/assets/splash/1.json` }
   }
 
 }

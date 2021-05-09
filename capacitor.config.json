@@ -3,7 +3,7 @@
   "appName": "Cloudcam Viethas",
   "bundledWebRuntime": false,
   "npmClient": "npm",
-  "webDir": "dist/CloudCameraVH",
+  "webDir": "dist/vietmoon",
   "plugins": {
     "SplashScreen": {
       "launchShowDuration": 0

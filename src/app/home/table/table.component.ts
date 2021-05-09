@@ -43,7 +43,7 @@ export class TableComponent implements OnInit {
     },
     {
       name: '401 đến 450',
-      sub: 'Thật khó để chờ đợi một điều gì đó bạn biết có thể chẳng bao giờ xảy ra, nhưng còn khó hơn để từ bỏ khi đó là mọi điều mà bạn muốn'
+      sub: 'Khó khăn nào rồi cũng qua. Cũng giống như sau cơn mưa, trời lại sáng'
     },
     {
       name: '451 đến 500',
@@ -63,7 +63,7 @@ export class TableComponent implements OnInit {
     },
     {
       name: '651 đến 700',
-      sub: 'Không có bí mật nào tạo nên thành công. Đó chỉ là kết quả của sự chuẩn bị, làm việc hết sức mình và rút ra kinh nghiệm từ sự thất bại!'
+      sub: ' Không có gì là không thể với một người luôn biết cố gắng'
     },
     {
       name: '701 đến 750',
