@@ -41,7 +41,7 @@ export class LetterComponent implements OnInit {
   }
   list: any = ['Đừng so sánh mình với người khác!', 'Mọi chuyện sẽ ổn thôi!', 'Hãy cười lên nào!', 'Chắc chắn sẽ làm được!']
   ngOnInit() {
-    this.service.showLoading(this.list[Math.floor(Math.random() * 3)], "transparent-loading", 'lines', null, false).then(() => {
+    this.service.showLoading(this.list[Math.floor(Math.random() * 3)], "transparent-loading", 'lines', null, "md", false).then(() => {
       this.selectLetter(this.index)
       this.service.hideLoading().then(() => {
         this.slides.slideTo(this.checkIndex(this.index))
@@ -222,5 +222,11 @@ export class LetterComponent implements OnInit {
         this.service.setValue('hulu-index', this.save)
       } break
     }
+  }
+  next() {
+    this.slides.slideNext()
+  }
+  back() {
+    this.slides.slidePrev()
   }
 }

@@ -2,18 +2,20 @@
 <ion-grid fixed>
     <ion-row>
         <ion-col size="6" *ngFor="let item of show ,let i = index">
-            <div class="ion-activatable ripple-parent" (click)="gotoLetters(i)">
+            <div class="ion-activatable ripple-parent" (click)="gotoLetters(item)">
                 <ion-ripple-effect type="bounded"></ion-ripple-effect>
                 <ion-avatar slot="start" style="min-width: 60px;">
                     <img [src]="item.img" />
                 </ion-avatar>
                 <ion-row style="display: flex; flex-direction: column;" class="ion-no-padding">
-                    <ion-text class="ion-no-padding" size="12">
-                        Bức thư thứ {{item.name}}
-                    </ion-text>
-                    <ion-text style="font-size: 0.8rem; color: darkslategray;font-weight: 100;">
-                        {{item.sub}}
-                    </ion-text>
+                    <ng-container>
+                        <ion-text class="ion-no-padding" size="12">
+                            Bức thư thứ {{item.name}}
+                        </ion-text>
+                        <ion-text style="font-size: 0.8rem; color: darkslategray;font-weight: 100;">
+                            {{item.sub}}
+                        </ion-text>
+                    </ng-container>
                 </ion-row>
             </div>
         </ion-col>

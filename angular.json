@@ -17,19 +17,18 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/CloudCameraVH",
+            "outputPath": "dist/vietmoon",
             "allowedCommonJsDependencies": [
-              "ionic-vhframeworks",
-              "vhmongo",
               "lottie-web",
               "@tweenjs/tween.js",
-              "@firebase/component"
+              "@firebase/component",
+              "howler"
             ],
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
-            "aot": false,
+            "aot": true,
             "assets": [
               "src/favicon.ico",
               "src/assets",

@@ -8,20 +8,6 @@ import { Router } from "@angular/router";
 @Injectable({
   providedIn: "root"
 })
-
-@Pipe({ name: 'value' })
-export class ValuesPipe implements PipeTransform {
-  transform(value): any {
-    let values = []
-    values.map((item) => {
-      return item
-    })
-    // for (let key in value) {
-    //   values.push(value[key])
-    // }
-    return value
-  }
-}
 export class FirebaseService {
   renderer: Renderer2;
 
@@ -327,11 +313,12 @@ export class FirebaseService {
     cssClass?: "current-loading" | "transparent-loading",
     spinner?: "bubbles" | "circles" | "circular" | "crescent" | "dots" | "lines" | "lines-small",
     duration: number = 0,
+    mode: "md" | "ios" = "md",
     showBackdrop: boolean = true
   ) {
     return new Promise((resolve) => {
       this.loading = setTimeout(() => this.loadingCtrl.dismiss(), 3000)
-      const option: any = { message, showBackdrop, duration }
+      const option: any = { message, showBackdrop, duration, mode }
 
       if (spinner) option['spinner'] = spinner;
       option['cssClass'] = cssClass ? cssClass : "current-loading";

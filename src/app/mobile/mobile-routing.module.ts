@@ -1,7 +1,10 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { AdbooksComponent } from './adbooks/adbooks.component';
+
 import { MobileComponent } from './mobile.component';
 import { MusicComponent } from './music/music.component';
+import { ThemeComponent } from './theme/theme.component';
 
 const routes: Routes = [
   {
@@ -15,6 +18,14 @@ const routes: Routes = [
   {
     path: 'music',
     component: MusicComponent,
+  },
+  {
+    path: 'theme',
+    component: ThemeComponent,
+  },
+  {
+    path: 'book',
+    component: AdbooksComponent,
   },
 ];
 

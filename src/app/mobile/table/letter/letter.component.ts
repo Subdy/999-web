@@ -42,20 +42,12 @@ export class LetterComponent implements OnInit {
   }
   list: any = ['Đừng so sánh mình với người khác!', 'Mọi chuyện sẽ ổn thôi!', 'Hãy cười lên nào!', 'Chắc chắn sẽ làm được!']
   ngOnInit() {
-    this.service.showLoading(this.list[Math.floor(Math.random() * 3)], "transparent-loading", 'lines', null, false).then(() => {
+    this.service.showLoading(this.list[Math.floor(Math.random() * 3)], "transparent-loading", 'lines', null, "ios", false).then(() => {
       this.selectLetter(this.index)
       this.service.hideLoading().then(() => {
         this.slides.slideTo(this.checkIndex(this.index))
       })
     })
-  }
-  ionViewWillEnter() {
-    // this.service.showLoading(this.list[Math.floor(Math.random() * 3)], "transparent-loading", 'lines', null, false).then(() => {
-    //   this.selectLetter(this.index)
-    //   this.service.hideLoading().then(() => {
-    //     this.slides.slideTo(this.checkIndex(this.index))
-    //   })
-    // })
   }
   selectLetter(index) {
     switch (index) {
@@ -85,7 +77,7 @@ export class LetterComponent implements OnInit {
   getData(data): any {
     let love = this.storageService.getData('hulu-love')
     this.char = data.map((item) => {
-      let b = Math.floor(Math.random() * 9) + 1
+      let b = Math.floor(Math.random() * 19) + 1
       if (item.id % 2 == 0) this.img = 'assets/left/' + b + '.svg'
       else this.img = 'assets/right/' + b + '.svg'
       for (let i in love) {

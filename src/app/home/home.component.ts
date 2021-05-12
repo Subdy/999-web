@@ -2,7 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { NavController } from '@ionic/angular';
 import { FirebaseService } from '../service/firebase.service';
-import { BooksComponent } from './books/books.component';
+import { AdbooksComponent } from './adbooks/adbooks.component';
+
 import { ThemeComponent } from './theme/theme.component';
 @Component({
   selector: 'app-home',
@@ -33,7 +34,7 @@ export class HomeComponent implements OnInit {
     this.navCtrl.navigateRoot('/music')
   }
   gotoPratice() {
-    this.router.navigate(['/table'])
+    this.router.navigate([''])
   }
   openTheme() {
     this.service.showModal(ThemeComponent, {}, true, true).then((modal) => {
@@ -43,7 +44,7 @@ export class HomeComponent implements OnInit {
     })
   }
   buyBook() {
-    this.service.showModal(BooksComponent, {}, true, true).then((modal) => {
+    this.service.showModal(AdbooksComponent, {}, true, true).then((modal) => {
       modal.onWillDismiss().then((data) => {
       })
     })

@@ -1,11 +1,11 @@
-<ion-header class="ion-no-border" mode="ios">
+<!-- <ion-header class="ion-no-border" mode="ios">
   <ion-toolbar>
     <ion-buttons slot="start">
       <ion-icon style="font-size: 1.8rem;" (click)="goBack()" name="arrow-back-outline"></ion-icon>
     </ion-buttons>
   </ion-toolbar>
-</ion-header>
-<ion-grid fixed style="max-height: 70%;">
+</ion-header> -->
+<ion-grid fixed style="max-height: 80%;">
   <ion-row>
     <ion-col *ngFor="let item of show" size="12" style="padding-bottom: 8px;">
       <div (click)="start(item)">
@@ -24,7 +24,7 @@
     </ion-col>
   </ion-row>
 </ion-grid>
-<ion-content scrollY='false' style="max-height: 25vh;">
+<ion-content scrollY='false' style="max-height: 20vh;">
   <ion-row class="ion-text-center control">
     <ion-spinner style="right: 50%; color: white;position: absolute;" *ngIf="spiner" name="crescent"></ion-spinner>
     <ion-col size="12">

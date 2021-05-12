@@ -10,9 +10,10 @@ import { ThemeComponent } from './theme/theme.component';
 import { VhComponent } from '../components/vh-component/vh-component';
 import { FirebaseService } from '../service/firebase.service';
 import { MusicComponent } from '../mobile/music/music.component';
+import { AdbooksComponent } from './adbooks/adbooks.component';
 
 @NgModule({
-  declarations: [MobileComponent, ThemeComponent, MusicComponent],
+  declarations: [MobileComponent, ThemeComponent, MusicComponent, AdbooksComponent],
   entryComponents: [ThemeComponent],
   imports: [
     CommonModule,

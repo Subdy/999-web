@@ -10,10 +10,11 @@ import { ThemeComponent } from './theme/theme.component';
 import { FirebaseService } from '../service/firebase.service';
 import { MusicComponent } from './music/music.component';
 import { LetterComponent } from './letter/letter.component';
+import { AdbooksComponent } from './adbooks/adbooks.component';
 
 @NgModule({
-  declarations: [HomeComponent, ThemeComponent, MusicComponent, LetterComponent],
-  entryComponents: [ThemeComponent],
+  declarations: [HomeComponent, ThemeComponent, MusicComponent, LetterComponent,AdbooksComponent],
+  entryComponents: [ThemeComponent,AdbooksComponent],
   imports: [
     CommonModule,
     ReactiveFormsModule,

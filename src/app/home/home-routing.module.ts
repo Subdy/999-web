@@ -10,10 +10,6 @@ const routes: Routes = [
         children: [
             {
                 path: '',
-                redirectTo: 'table', pathMatch: 'full'
-            },
-            {
-                path: 'table',
                 loadChildren: () => import('./table/table.module').then(m => m.TableModule)
             },
             {
